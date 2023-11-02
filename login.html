@@ -47,6 +47,11 @@
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -58,7 +63,18 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required><br><br>
 
+
+        <label for="email">email:</label>
+        <input type="password" id="password" name="password" required><br><br>
+<label for="terms-conditions">
+                <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
+                I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a>
+            </label>
         <input type="submit" value="Login">
     </form>
+
+    <div class="error">
+        <!-- You can display error messages here, e.g., "Invalid username or password." -->
+    </div>
 </body>
 </html>
